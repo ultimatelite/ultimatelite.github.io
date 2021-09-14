@@ -26,3 +26,13 @@
   cursor: pointer;
   float: left;
 }
+
+ .divs{
+   background-color: cyan;
+   width: 650px;
+   height: 350px;
+   position: relative;
+   overflow: auto;
+   border-radius: 32px;
+   display: block;
+ }
