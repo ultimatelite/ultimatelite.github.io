@@ -3,19 +3,46 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CStyle/commands.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      $("#license").load("../LICENSE.txt", function(responsetxt, statustxt, xhr){
+        if(statustxt == "success"){
+          console.log("Success!")
+        }
+        else if(statustxt == "error"){
+          alert("There was an error to load LICENSE")
+          console.error("Error: " + xhr.status + ": " + xhr.statusText);
+        }
+      });
+    });
+    </script>
     <title>Binaries</title>
   </head>
   <body>
     <p> <b>List available Release for binary </b></p>
     <br><br>
-    <p> <b>Windows</b> </p><br>
+    <p> <b>Windows</b> </p>
     <hr>
     <ul>
-      <li><a href="https://github.com/ultimatelite/ultimatelite.github.io/releases/download/v.0.1.3a-bin/musicrecognizer.exe" download>detectmsc</a></li>
-      <li> <a href="https://github.com/ultimatelite/ultimatelite.github.io/releases/download/v.0.1.3a-bin/chatbot.exe" download>ask</a></li>
+      <li><a href="https://github.com/ultimatelite/ultimatelite.github.io/releases/download/v.0.1.3a-bin/musicrecognizer.exe" download>musicrecognizer-v0-1-3a.exe</a></li>
+      <li> <a href="https://github.com/ultimatelite/ultimatelite.github.io/releases/download/v.0.1.3a-bin/chatbot.exe" download>chatbot-v0-1-3a.exe</a></li>
       </ul>
+    <hr>
+    <br><br>
+    <p> <b> Linux </b> </p>
+    <hr>
+    <ul>
+      <li><a href="https://github.com/ultimatelite/ultimatelite.github.io/releases/download/v.0.1.3a-bin/musicrecognizer.tar.gz" download>musicrecognizer-v-0-1-3a-linux.tar.gz</a></li>
+        <li><a href="https://github.com/ultimatelite/ultimatelite.github.io/releases/download/v.0.1.3a-bin/chatbot.tar.gz" download>chatbot-v-0-1-3a-linux.tar.gz</a></li>
+    </ul>
     <hr>
     <br><br><br><br><br><br><br><br><br>
     <a href="../index.html">main page</a>
+    <br>
+    <br>
+    <p> <center>License for Publish</center></p>
+    <div class="divs" style="background-color: cyan" id="license"><center></center></div><br><br>
   </body>
 </html>
