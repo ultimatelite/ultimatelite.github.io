@@ -1,6 +1,3 @@
-# ultimatelite.github.io
-to help my dad
-
 # Licensing
 This project is licensed under the terms of the MIT license
 
