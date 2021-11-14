@@ -8,3 +8,6 @@ Linux: Alpha 0.1.3 (Recommended Debian / GNU 8 and above)
 
 # Codes
 Codes are available to their own respected repository
+
+# Sites
+This site is currently for discord bot named UltimateLite-Bot, and providing stable release of its feature, and in the future, we will add feature preview through the website
