@@ -1,0 +1,22 @@
+.videobox{
+    background-color: yellow;
+    width: 456px;
+    height: 295px;
+    margin: 25px;
+    overflow: auto
+}
+
+.vidname{
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+    font-size: 35px;
+}
+.container{
+    width: 556px;
+    height: 668px;
+    background-color: green;
+    border-radius: 10px;
+    overflow: auto;
+}
+.big{
+    font-size: 55px;
+}

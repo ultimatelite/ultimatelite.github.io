@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="cookie.js" type="text/javascript"></script>
+        <script src="../libs/md5/js/md5.js"></script>
+        <script>
+            function rand(len){
+ let res = ''
+ let text = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'
+ let length = text.length
+ for(let i = 0; i < len; i++){
+ res+=text.charAt(Math.floor(Math.random() * length));}
+return res
+ }
+        </script>
+        <script>
+            $(document).ready(function(){
+                $("#reload").css("display", "none")
+                $("#recommendation").children().css("display", "none")
+            if(checkCookie("auth")){
+                window.location = "watch.html"
+            }else{
+                let i = prompt("OAuth token: ")
+                $.get("oauth.txt", function(txt){
+                    let conv = md5(txt)
+                    if(i != conv){
+                        let chd = []
+                        alert("Invalid Credentials")
+                        $("#reload").css("display", "block")
+                        $("#recommendation").children().css('display', 'block')
+                    }else{
+                        let randomed = rand(65)
+                        setCookie("auth", randomed, 3)
+                        window.location = "watch.html"
+                    }
+                })
+            }
+        })
+        </script>
+        <script>
+            function reloadPage(){
+                window.location.reload()
+            }
+        </script>
+    </head>
+    <body>
+        <button id="reload" onclick="reloadPage()">Reload page</button>
+        <div id="recommendation">
+            <p>Want to get your own web without coding? My recommendation for Website builder (<a href="https://en.wikipedia.org/wiki/Content_management_system">CMS</a>):</p>
+            <ul>
+                <li><a href="https://blogger.com">Blogger</a> (By Google)</li>
+                <li><a href="https://wordpress.com">WordPress</a> (By WordPress Foundation)</li>
+                <li><a href="https://wix.com">Wix</a>(By Wix)</li>
+                <li><a href="https://sites.google.com">Google Site</a> (By Google)</li>
+            </ul>
+        </div>
+    </body>
+</html>
