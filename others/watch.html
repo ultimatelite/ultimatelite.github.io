@@ -7,6 +7,139 @@
         <script src="cookie.js" type="text/javascript"></script>
         <title>My watching</title>
         <script>
+            function switchEpisodeS1(button, num){
+                $(button).click(function(){
+                switch(Math.floor(num)){
+                    case 1:
+                        $("#vidS1").attr("src", "https://github.com/ultimatelite/ultimatelite.github.io/releases/download/v1-anime/ep1.mkv")
+                    $("#vidname").text(`Kobayashi-san chi no Maid Dragon ep. ${num}`)
+                    $("#vidS1S").attr("src", `../subtitles/ep${num}.vtt`)
+                        break;
+                    case 2:
+                    $("#vidS1").attr("src", "https://github.com/ultimatelite/ultimatelite.github.io/releases/download/v1-anime/ep2.mkv")
+                    $("#vidname").text(`Kobayashi-san chi no Maid Dragon ep. ${num}`)
+                    $("#vidS1S").attr("src", `../subtitles/ep${num}.vtt`)
+                        break;
+                    case 3:
+                    $("#vidS1").attr("src", "https://github.com/ultimatelite/ultimatelite.github.io/releases/download/v1-anime/ep3.mkv")
+                    $("#vidname").text(`Kobayashi-san chi no Maid Dragon ep. ${num}`)
+                    $("#vidS1S").attr("src", `../subtitles/ep${num}.vtt`)
+                        break;
+                    case 4:
+                    $("#vidS1").attr("src", "https://github.com/ultimatelite/ultimatelite.github.io/releases/download/v1-anime/ep4.mkv")
+                    $("#vidname").text(`Kobayashi-san chi no Maid Dragon ep. ${num}`)
+                    $("#vidS1S").attr("src", `../subtitles/ep${num}.vtt`)
+                        break;
+                    case 5:
+                    $("#vidS1").attr("src", "https://github.com/ultimatelite/ultimatelite.github.io/releases/download/v1-anime/ep5.mkv")
+                    $("#vidname").text(`Kobayashi-san chi no Maid Dragon ep. ${num}`)
+                    $("#vidS1S").attr("src", `../subtitles/ep${num}.vtt`)
+                        break;
+                    case 6:
+                    $("#vidS1").attr("src", "https://github.com/ultimatelite/ultimatelite.github.io/releases/download/v1-anime/ep6.mkv")
+                    $("#vidname").text(`Kobayashi-san chi no Maid Dragon ep. ${num}`)
+                    $("#vidS1S").attr("src", `../subtitles/ep${num}.vtt`)
+                        break;
+                    case 7:
+                    $("#vidS1").attr("src", "https://github.com/ultimatelite/ultimatelite.github.io/releases/download/v1-anime/ep7.mkv")
+                    $("#vidname").text(`Kobayashi-san chi no Maid Dragon ep. ${num}`)
+                    $("#vidS1S").attr("src", `../subtitles/ep${num}.vtt`)
+                        break;
+                    case 8:
+                        $("v#idS1").attr("src", "https://github.com/ultimatelite/ultimatelite.github.io/releases/download/v1-anime/ep8.mkv")
+                    $("#vidname").text(`Kobayashi-san chi no Maid Dragon ep. ${num}`)
+                    $("#vidS1S").attr("src", `../subtitles/ep${num}.vtt`)
+                        break;
+                    case 9:
+                    $("#vidS1").attr("src", "https://github.com/ultimatelite/ultimatelite.github.io/releases/download/v1-anime/ep9.mkv")
+                    $("#vidname").text(`Kobayashi-san chi no Maid Dragon ep. ${num}`)
+                    $("#vidS1S").attr("src", `../subtitles/ep${num}.vtt`)
+                        break;
+                    case 10:
+                    $("#vidS1").attr("src", "https://github.com/ultimatelite/ultimatelite.github.io/releases/download/v1-anime/ep10.mkv")
+                    $("#vidname").text(`Kobayashi-san chi no Maid Dragon ep. ${num}`)
+                    $("#vidS1S").attr("src", `../subtitles/ep${num}.vtt`)
+                        break;
+                    case 11:
+                    $("#vidS1").attr("src", "https://github.com/ultimatelite/ultimatelite.github.io/releases/download/v1-anime/ep11.mkv")
+                    $("#vidname").text(`Kobayashi-san chi no Maid Dragon ep. ${num}`)
+                    $("#vidS1S").attr("src", `../subtitles/ep${num}.vtt`)
+                        break;
+                    case 12:
+                    $("#vidS1").attr("src", "https://github.com/ultimatelite/ultimatelite.github.io/releases/download/v1-anime/ep12.mkv")
+                    $("#vidname").text(`Kobayashi-san chi no Maid Dragon ep. ${num}`)
+                    $("#vidS1S").attr("src", `../subtitles/ep${num}.vtt`)
+                        break;
+                    case 13:
+                    $("#vidS1").attr("src", "https://github.com/ultimatelite/ultimatelite.github.io/releases/download/v1-anime/ep13.mkv")
+                    $("#vidname").text(`Kobayashi-san chi no Maid Dragon ep. ${num}`)
+                    $("#vidS1S").attr("src", `../subtitles/ep${num}.vtt`)
+                        break;
+                    default:
+                        alert("Amount of that episode exceeds the case.");
+                        break;
+                }
+            })
+            }
+
+            function switchEpisodeS2(button, num){
+                $(button).click(function(){
+                    switch(Math.floor(num)){
+                        case 1:
+                        $("#vidS2").attr("src", `https://github.com/ultimatelite/ultimatelite.github.io/releases/download/v2-anime/ep${num}.mp4`);
+                        $("#vidname2").text(`Kobayashi-san chi no maid dragon ep. ${num}`)
+                        break;
+                        case 2:
+                        $("#vidS2").attr("src", `https://github.com/ultimatelite/ultimatelite.github.io/releases/download/v2-anime/ep${num}.mp4`);
+                        $("#vidname2").text(`Kobayashi-san chi no maid dragon ep. ${num}`)
+                        break;
+                        case 3:
+                        $("#vidS2").attr("src", `https://github.com/ultimatelite/ultimatelite.github.io/releases/download/v2-anime/ep${num}.mp4`);
+                        $("#vidname2").text(`Kobayashi-san chi no maid dragon ep. ${num}`)
+                        break;
+                        case 4:
+                        $("#vidS2").attr("src", `https://github.com/ultimatelite/ultimatelite.github.io/releases/download/v2-anime/ep${num}.mp4`);
+                        $("#vidname2").text(`Kobayashi-san chi no maid dragon ep. ${num}`)
+                        break;
+                        case 5:
+                        $("#vidS2").attr("src", `https://github.com/ultimatelite/ultimatelite.github.io/releases/download/v2-anime/ep${num}.mp4`);
+                        $("#vidname2").text(`Kobayashi-san chi no maid dragon ep. ${num}`)
+                        break;
+                        case 6:
+                        $("#vidS2").attr("src", `https://github.com/ultimatelite/ultimatelite.github.io/releases/download/v2-anime/ep${num}.mp4`);
+                        $("#vidname2").text(`Kobayashi-san chi no maid dragon ep. ${num}`)
+                        break;
+                        case 7:
+                        $("#vidS2").attr("src", `https://github.com/ultimatelite/ultimatelite.github.io/releases/download/v2-anime/ep${num}.mp4`);
+                        $("#vidname2").text(`Kobayashi-san chi no maid dragon ep. ${num}`)
+                        break;
+                        case 8:
+                        $("#vidS2").attr("src", `https://github.com/ultimatelite/ultimatelite.github.io/releases/download/v2-anime/ep${num}.mp4`);
+                        $("#vidname2").text(`Kobayashi-san chi no maid dragon ep. ${num}`)
+                        break;
+                        case 9:
+                        $("#vidS2").attr("src", `https://github.com/ultimatelite/ultimatelite.github.io/releases/download/v2-anime/ep${num}.mp4`);
+                        $("#vidname2").text(`Kobayashi-san chi no maid dragon ep. ${num}`)
+                        break;
+                        case 10:
+                        $("#vidS2").attr("src", `https://github.com/ultimatelite/ultimatelite.github.io/releases/download/v2-anime/ep${num}.mp4`);
+                        $("#vidname2").text(`Kobayashi-san chi no maid dragon ep. ${num}`)
+                        break;
+                        case 11:
+                        $("#vidS2").attr("src", `https://github.com/ultimatelite/ultimatelite.github.io/releases/download/v2-anime/ep${num}.mp4`);
+                        $("#vidname2").text(`Kobayashi-san chi no maid dragon ep. ${num}`)
+                        break;
+                        case 12:
+                        $("#vidS2").attr("src", `https://github.com/ultimatelite/ultimatelite.github.io/releases/download/v2-anime/ep${num}.mp4`);
+                        $("#vidname2").text(`Kobayashi-san chi no maid dragon ep. ${num}`)
+                        break;
+                        default:
+                        alert("Amount of that episode exceeds the case.");
+                        break;
+                    }
+                })
+            }
+
             $(document).ready(function(){
                 if(!checkCookie("auth")){
                     window.location = "login.html"
@@ -18,166 +151,62 @@
         <center>
             <span class="big">Season 1</span>
             <div class="container">
-                <span class="vidname">Kobayashi-san chi no maid dragon (Ep 1)</span>
+                <span class="vidname" id="vidname">Kobayashi-san chi no Maid Dragon ep. 1</span>
+                <div class="hidden-container"></div>
                 <div class="videobox">
-                    <video width="320" height="240" controls src="https://github.com/ultimatelite/ultimatelite.github.io/releases/download/v1-anime/ep1.mkv">
-                        <track src="../subtitles/ep1.vtt" kind="subtitles" srclang="id" label="Indonesia" default>
+                    <div class="hidden-container"></div>
+                    <div class="hidden-container"></div>
+                    <video id="vidS1" width="320" height="240" controls>
+                        <track id="vidS1S" srclang="id" kind="subtitles" label="Indonesia" default>
                     </video>
                 </div>
-                <span class="vidname">Kobayashi-san chi no maid dragon (Ep 2)</span>
-                <div class="videobox">
-                    <video width="320" height="240" controls src="https://github.com/ultimatelite/ultimatelite.github.io/releases/download/v1-anime/ep2.mkv">
-                        <track src="../subtitles/ep2.vtt" kind="subtitles" srclang="id" label="Indonesia" default>
-                    </video>
-                </div>
-                <span class="vidname">Kobayashi-san chi no maid dragon (Ep 3)</span>
-                <div class="videobox">
-                    <video width="320" height="240" controls src="https://github.com/ultimatelite/ultimatelite.github.io/releases/download/v1-anime/ep3.mkv">
-                        <track src="../subtitles/ep3.vtt" kind="subtitles" srclang="id" label="Indonesia" default>
-                    </video>
-                </div>
-                <span class="vidname">Kobayashi-san chi no maid dragon (Ep 4)</span>
-                <div class="videobox">
-                    <video width="320" height="240" controls src="https://github.com/ultimatelite/ultimatelite.github.io/releases/download/v1-anime/ep4.mkv">
-                        <track src="../subtitles/ep4.vtt" kind="subtitles" srclang="id" label="Indonesia" default>
-                    </video>
-                </div>
-                <span class="vidname">Kobayashi-san chi no maid dragon (Ep 5)</span>
-                <div class="videobox">
-                    <video width="320" height="240" controls src="https://github.com/ultimatelite/ultimatelite.github.io/releases/download/v1-anime/ep5.mkv">
-                        <track src="../subtitles/ep5.vtt" kind="subtitles" srclang="id" label="Indonesia" default>
-                    </video>
-                </div>
-                <span class="vidname">Kobayashi-san chi no maid dragon (Ep 6)</span>
-                <div class="videobox">
-                    <video width="320" height="240" controls src="https://github.com/ultimatelite/ultimatelite.github.io/releases/download/v1-anime/ep6.mkv">
-                        <track src="../subtitles/ep6.vtt" kind="subtitles" srclang="id" label="Indonesia" default>
-                    </video>
-                </div>
-                <span class="vidname">Kobayashi-san chi no maid dragon (Ep 7)</span>
-                <div class="videobox">
-                    <video width="320" height="240" controls src="https://github.com/ultimatelite/ultimatelite.github.io/releases/download/v1-anime/ep7.mkv">
-                        <track src="../subtitles/ep7.vtt" kind="subtitles" srclang="id" label="Indonesia" default>
-                    </video>
-                </div>
-                <span class="vidname">Kobayashi-san chi no maid dragon (Ep 8)</span>
-                <div class="videobox">
-                    <video width="320" height="240" controls src="https://github.com/ultimatelite/ultimatelite.github.io/releases/download/v1-anime/ep8.mkv">
-                        <track src="../subtitles/ep8.vtt" kind="subtitles" srclang="id" label="Indonesia" default>
-                    </video>
-                </div>
-                <span class="vidname">Kobayashi-san chi no maid dragon (Ep 9)</span>
-                <div class="videobox">
-                    <video width="320" height="240" controls src="https://github.com/ultimatelite/ultimatelite.github.io/releases/download/v1-anime/ep9.mkv">
-                        <track src="../subtitles/ep9.vtt" kind="subtitles" srclang="id" label="Indonesia" default>
-                    </video>
-                </div>
-                <span class="vidname">Kobayashi-san chi no maid dragon (Ep 10)</span>
-                <div class="videobox">
-                    <video width="320" height="240" controls src="https://github.com/ultimatelite/ultimatelite.github.io/releases/download/v1-anime/ep10.mkv">
-                        <track src="../subtitles/ep10.vtt" kind="subtitles" srclang="id" label="Indonesia" default>
-                    </video>
-                </div>
-                <span class="vidname">Kobayashi-san chi no maid dragon (Ep 11)</span>
-                <div class="videobox">
-                    <video width="320" height="240" controls src="https://github.com/ultimatelite/ultimatelite.github.io/releases/download/v1-anime/ep11.mkv">
-                        <track src="../subtitles/ep11.vtt" kind="subtitles" srclang="id" label="Indonesia" default>
-                    </video>
-                </div>
-                <span class="vidname">Kobayashi-san chi no maid dragon (Ep 12)</span>
-                <div class="videobox">
-                    <video width="320" height="240" controls src="https://github.com/ultimatelite/ultimatelite.github.io/releases/download/v1-anime/ep12.mkv">
-                        <track src="../subtitles/ep12.vtt" kind="subtitles" srclang="id" label="Indonesia" default>
-                    </video>
-                </div>
-                <span class="vidname">Kobayashi-san chi no maid dragon (Ep 13)</span>
-                <div class="videobox">
-                    <video width="320" height="240" controls src="https://github.com/ultimatelite/ultimatelite.github.io/releases/download/v1-anime/ep13.mkv">
-                        <track src="../subtitles/ep13.vtt" kind="subtitles" srclang="id" label="Indonesia" default>
-                    </video>
-                </div>
+                <div class="hidden-container"></div>
+                <button onclick="switchEpisodeS1(this, 1)" style="float: left">Episode 1</button>
+                <button onclick="switchEpisodeS1(this, 2)" style="float: left">Episode 2</button>
+                <button onclick="switchEpisodeS1(this, 3)" style="float: left">Episode 3</button>
+                <button onclick="switchEpisodeS1(this, 4)" style="float: left">Episode 4</button>
+                <button onclick="switchEpisodeS1(this, 5)" style="float: left">Episode 5</button>
+                <button onclick="switchEpisodeS1(this, 6)" style="float: left">Episode 6</button>
+                <button onclick="switchEpisodeS1(this, 7)" style="float: left">Episode 7</button>
+                <button onclick="switchEpisodeS1(this, 8)" style="float: left">Episode 8</button>
+                <button onclick="switchEpisodeS1(this, 9)" style="float: left">Episode 9</button>
+                <button onclick="switchEpisodeS1(this, 10)" style="float: left">Episode 10</button>
+                <button onclick="switchEpisodeS1(this, 11)" style="float: left">Episode 11</button>
+                <button onclick="switchEpisodeS1(this, 12)" style="float: left">Episode 12</button>
+                <button onclick="switchEpisodeS1(this, 13)" style="float: left">Episode 13</button>
             </div>
             <hr>
             <span class="big">Season 2</span>
             <div class="container">
-                <span class="vidname">Kobayashi-san chi no maid dragon (Ep 1)</span>
+                <span class="vidname" id="vidname2">Kobayashi-san chi no maid dragon ep. 1</span>
+                <div class="hidden-container"></div>
                 <div class="videobox">
-                    <video width="320" height="240" controls src="https://github.com/ultimatelite/ultimatelite.github.io/releases/download/v2-anime/ep1.mp4">
+                    <div class="hidden-container"></div>
+                    <div class="hidden-container"></div>
+                    <video id="vidS2" width="320" height="240" controls>
 
                     </video>
                     </div>
-                    <span class="vidname">Kobayashi-san chi no maid dragon (Ep 2)</span>
-                <div class="videobox">
-                    <video width="320" height="240" controls src="https://github.com/ultimatelite/ultimatelite.github.io/releases/download/v2-anime/ep2.mp4">
-
-                    </video>
-                    </div>
-                    <span class="vidname">Kobayashi-san chi no maid dragon (Ep 3)</span>
-                <div class="videobox">
-                    <video width="320" height="240" controls src="https://github.com/ultimatelite/ultimatelite.github.io/releases/download/v2-anime/ep3.mp4">
-
-                    </video>
-                    </div>
-                    <span class="vidname">Kobayashi-san chi no maid dragon (Ep 4)</span>
-                <div class="videobox">
-                    <video width="320" height="240" controls src="https://github.com/ultimatelite/ultimatelite.github.io/releases/download/v2-anime/ep4.mp4">
-
-                    </video>
-                    </div>
-                    <span class="vidname">Kobayashi-san chi no maid dragon (Ep 5)</span>
-                <div class="videobox">
-                    <video width="320" height="240" controls src="https://github.com/ultimatelite/ultimatelite.github.io/releases/download/v2-anime/ep5.mp4">
-
-                    </video>
-                    </div>
-                    <span class="vidname">Kobayashi-san chi no maid dragon (Ep 6)</span>
-                <div class="videobox">
-                    <video width="320" height="240" controls src="https://github.com/ultimatelite/ultimatelite.github.io/releases/download/v2-anime/ep6.mp4">
-
-                    </video>
-                    </div>
-                    <span class="vidname">Kobayashi-san chi no maid dragon (Ep 7)</span>
-                <div class="videobox">
-                    <video width="320" height="240" controls src="https://github.com/ultimatelite/ultimatelite.github.io/releases/download/v2-anime/ep7.mp4">
-
-                    </video>
-                    </div>
-                    <span class="vidname">Kobayashi-san chi no maid dragon (Ep 8)</span>
-                <div class="videobox">
-                    <video width="320" height="240" controls src="https://github.com/ultimatelite/ultimatelite.github.io/releases/download/v2-anime/ep8.mp4">
-
-                    </video>
-                    </div>
-                    <span class="vidname">Kobayashi-san chi no maid dragon (Ep 9)</span>
-                <div class="videobox">
-                    <video width="320" height="240" controls src="https://github.com/ultimatelite/ultimatelite.github.io/releases/download/v2-anime/ep9.mp4">
-
-                    </video>
-                    </div>
-                    <span class="vidname">Kobayashi-san chi no maid dragon (Ep 10)</span>
-                <div class="videobox">
-                    <video width="320" height="240" controls src="https://github.com/ultimatelite/ultimatelite.github.io/releases/download/v2-anime/ep10.mp4">
-
-                    </video>
-                    </div>
-                    <span class="vidname">Kobayashi-san chi no maid dragon (Ep 11)</span>
-                <div class="videobox">
-                    <video width="320" height="240" controls src="https://github.com/ultimatelite/ultimatelite.github.io/releases/download/v2-anime/ep11.mp4">
-
-                    </video>
-                    </div>
-                    <span class="vidname">Kobayashi-san chi no maid dragon (Ep 12)</span>
-                <div class="videobox">
-                    <video width="320" height="240" controls src="https://github.com/ultimatelite/ultimatelite.github.io/releases/download/v2-anime/ep12.mp4">
-
-                    </video>
-                    </div>
+                    <div class="hidden-container"></div>
+                    <button onclick="switchEpisodeS2(this, 1)" style="float: left">Episode 1</button>
+                    <button onclick="switchEpisodeS2(this, 2)" style="float: left">Episode 2</button>
+                    <button onclick="switchEpisodeS2(this, 3)" style="float: left">Episode 3</button>
+                    <button onclick="switchEpisodeS2(this, 4)" style="float: left">Episode 4</button>
+                    <button onclick="switchEpisodeS2(this, 5)" style="float: left">Episode 5</button>
+                    <button onclick="switchEpisodeS2(this, 6)" style="float: left">Episode 6</button>
+                    <button onclick="switchEpisodeS2(this, 7)" style="float: left">Episode 7</button>
+                    <button onclick="switchEpisodeS2(this, 8)" style="float: left">Episode 8</button>
+                    <button onclick="switchEpisodeS2(this, 9)" style="float: left">Episode 9</button>
+                    <button onclick="switchEpisodeS2(this, 10)" style="float: left">Episode 10</button>
+                    <button onclick="switchEpisodeS2(this, 11)" style="float: left">Episode 11</button>
+                    <button onclick="switchEpisodeS2(this, 12)" style="float: left">Episode 12</button>
             </div>
             <hr>
             <span class="big">Bonus</span>
             <div class="container">
                 <span class="vidname">Kobayashi-san chi no maid dragon OVA</span>
                 <div class="videobox">
+                    <div class="hidden-container"></div>
                     <video width="320" height="240" controls src="https://github.com/ultimatelite/ultimatelite.github.io/releases/download/v1-anime/epOVA.mkv">
                         <track src="../subtitles/epOVA.vtt" kind="subtitles" srclang="id" label="Indonesia" default>
                     </video>
@@ -188,9 +217,10 @@
                 </div>
                 <span class="vidname">Kobayashi-san chi no maid dragon (Mini dragon)</span>
                 <div class="videobox">
-                    <span class="big"><a href="https://9anime.to/watch/miss-kobayashis-dragon-maid-s-short-animation-series.m2m48">9anime</a></span>
+                    <span class="big"><a href="https://9anime.to/watch/miss-kobayashis-dragon-maid-s-short-animation-series.m2m48">9anime (pt 2)</a><br>
+                    <a href="https://9anime.to/watch/miss-kobayashis-dragon-maid-s-short-animation-series.jo9y">9anime (pt 1)</a></span>
                 </div>
-                <span class="vidname">Kobayashi-san chi no maid dragon Japanese Hospitality Attendance is a dragon (Coming Soon) [19-jan-2022]</span>
+                <span class="vidname">Kobayashi-san chi no maid dragon Japanese Hospitality Attendance is a dragon</span>
                 <div class="videobox">
                     <span class="big"><a href="https://9anime.to/watch/miss-kobayashis-dragon-maid-s-japanese-hospitality-attendance-is-a-dragon.9oo28">9anime</a></span>
                 </div>

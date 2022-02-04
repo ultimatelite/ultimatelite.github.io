@@ -1,7 +1,7 @@
 .videobox{
     background-color: yellow;
     width: 456px;
-    height: 295px;
+    height: 305px;
     margin: 25px;
     overflow: auto
 }
@@ -11,12 +11,17 @@
     font-size: 35px;
 }
 .container{
-    width: 556px;
-    height: 668px;
+    width: 835px;
+    height: 505px;
     background-color: green;
     border-radius: 10px;
     overflow: auto;
 }
 .big{
     font-size: 55px;
+}
+.hidden-container{
+    width: inherit;
+    background-color: inherit;
+    height: 15px;
 }
