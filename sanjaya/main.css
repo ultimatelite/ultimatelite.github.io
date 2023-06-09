@@ -1,4 +1,38 @@
+@font-face {
+    font-family: Titillium;
+    src: url(fonts/Titillium/TitilliumWeb-Regular.ttf);
+}
+
 *{
     box-sizing: border-box;
-    margin: 0;
+    font-size: 14px;
+    font-family: Titillium;    
+}
+.fixed-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 15px;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  main {
+    flex-grow: 1;
+  }
+.dropdown-menu li {
+    position: relative;
+}
+.dropdown-menu .dropdown-submenu {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: -7px;
+}
+.dropdown-menu > li:hover > .dropdown-submenu {
+    display: block;
 }
